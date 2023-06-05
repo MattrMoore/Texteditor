@@ -1,26 +1,23 @@
 // Import required modules
-const HtmlWebpackPlugin = require('html-webpack-plugin');  // A plugin to simplify creation of HTML files to serve webpack bundles
-const WebpackPwaManifest = require('webpack-pwa-manifest'); // A plugin to generate a 'manifest.json' for Progressive Web Applications
-const path = require('path'); // A Node.js module providing utilities for working with file and directory paths
-const { InjectManifest } = require('workbox-webpack-plugin'); // A plugin to pre-cache files using a service worker, useful for PWA
+const HtmlWebpackPlugin = require('html-webpack-plugin'); 
+const WebpackPwaManifest = require('webpack-pwa-manifest'); 
+const path = require('path'); 
+const { InjectManifest } = require('workbox-webpack-plugin'); 
 
 // Export the webpack configuration object
 module.exports = () => {
   return {
-    // Set the mode to 'development'
     mode: 'development',
 
-    // Define the entry points for the webpack
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js',
       editor: './src/js/editor.js',
     },
 
-    // Define the output settings
     output: {
-      filename: '[name].bundle.js', // The name of the output file
-      path: path.resolve(__dirname, 'dist'), // The output directory
+      filename: '[name].bundle.js', 
+      path: path.resolve(__dirname, 'dist'), 
     },
 
     // Define the plugins used by webpack
@@ -64,13 +61,13 @@ module.exports = () => {
     module: {
 
       rules: [
-        // Rule for CSS files
+     
         {
           test: /\.css$/i,
           use: ['style-loader', 'css-loader'],
         },
 
-        // Rule for JavaScript files
+  
         {
           test: /\.m?js$/,
           exclude: /node_modules/,

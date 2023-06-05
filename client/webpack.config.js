@@ -42,7 +42,7 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'Definitely_Not_Malware',
+        name: 'Jate',
         short_name: 'JATE',
         description: 'Type code or text and save it to the database',
         background_color: '#225ca3',

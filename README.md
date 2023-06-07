@@ -19,6 +19,8 @@ https://texteditormrm.herokuapp.com/
 
 ## Screenshots 
 ![image](https://github.com/MattrMoore/Texteditor/assets/114311012/5733f715-2b7e-414f-9a39-db8cec93a1cc)
+![image](https://github.com/MattrMoore/Texteditor/assets/114311012/7985ba4c-4d90-43f9-8a24-3445f3cef848)
+
 
 ## License 
 
